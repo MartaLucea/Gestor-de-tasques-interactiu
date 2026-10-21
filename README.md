@@ -1,38 +1,29 @@
-# Ex1
+# Gestor de Tasques (Vue 3)
 
-This template should help get you started developing with Vue 3 in Vite.
+Petita aplicació feta amb Vue 3 i Vite per gestionar una llista de tasques pendents.
 
-## Recommended IDE Setup
+## Funcionalitats
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Afegir noves tasques
+- Marcar i desmarcar tasques com a completades
+- Eliminar tasques
+- Mostrar només les tasques pendents
+- Resum amb el total de tasques i les pendents
 
-## Recommended Browser Setup
+## Com executar-la
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+Després obre l'adreça que apareix al terminal (normalment `http://localhost:5173`).
 
-```sh
-npm run build
-```
+## Estructura
+
+- `src/App.vue`: component principal, carrega `Task.vue`.
+- `src/components/Task.vue`: tota la lògica i la vista del gestor de tasques.
+
+## Conceptes de Vue utilitzats
+
+`ref`, `computed`, `v-model`, `v-for` amb `:key`, `v-if` / `v-else`, `v-show`, `@click` i `:class`.
