@@ -1,7 +1,6 @@
-<script setup> // 💡 Se recomienda usar 'setup' en Vue 3
+<script setup>
 import { ref, computed } from 'vue'
 
-// Tu molde puro (solo datos)
 class Tasca {
     constructor(id, nom) {
         this.id = id
@@ -47,7 +46,6 @@ function marcarTasca(id){
     }
 }
 
-// Propietats calculades
 const tasquesFiltrades = computed(() => {
     if (nomesPendents.value) {
         return tasques.value.filter(tasca => !tasca.completada)
